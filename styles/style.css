@@ -1,0 +1,35 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.light {
+    background-color: #E5E5E5;
+    color: #2B3541;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 65px;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    padding-left: 14px;
+    padding-right: 14px;
+}
