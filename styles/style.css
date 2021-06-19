@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     padding-top: 44px;
     padding-bottom: 65px;
+    position: relative;
 }
 
 .nav {
@@ -33,3 +34,26 @@ header {
     padding-left: 14px;
     padding-right: 14px;
 }
+
+.main-logo {
+    position: absolute;
+    left: 22px;
+    top: 50px;
+}
+
+.main-nav {
+    position: absolute;
+    left: 358px;
+    top: 54px;
+}
+
+.main-nav-item {
+    padding-right: 40px;
+}
+
+
+.nav-social {
+    position: absolute;
+    left: 1740px;
+}
+
