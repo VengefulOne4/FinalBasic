@@ -229,7 +229,12 @@ header {
     padding: 20px 43px 20px 43px;
     background-color: #FBF138;
     border: transparent;
-    transition: 0.2s background-color ease;
+    transition: 0.2s all ease;
+}
+
+.yellow-button:hover {
+    background-color: #2B3541;
+    color:#FBF138;
 }
 
 .event-item-group {
@@ -501,7 +506,7 @@ header {
     left: 659px;
 }
 
-.email-input {
+.email-input{
     position: relative;
     outline: none;
     top: 129px;
@@ -514,8 +519,19 @@ header {
     letter-spacing: calc(18px * 0.06);
 }
 
+.check__box {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    /*background-image: url(/img/checkbox_background.svg);*/
+}
+
 .subscribe {
     position: relative;
+    z-index: 2;
     top: 129px;
     left: 61px;
     margin-left: 15px;
@@ -525,20 +541,24 @@ header {
     letter-spacing: 0.03em;
 }
 
-.email-checkbox {
+.email__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position: relative;
-    top: 6px;
-    left: -2px;
-    width: 18px;
-    height: 18px;
+    top: 11px;
+    left: 1px;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/checkbox_unchecked.svg);
 }
 
-.email-checkbox:checked {
-    background:url(/img/tick.svg);
+.email__input:checked {
+    background-image: url(/img/checkbox_checked.svg);
 }
 
 label{
-    background:url(/img/tick.svg);
+    background-repeat: no-repeat;
     display: block;
     width: 18px;
     height: 18px;
@@ -546,8 +566,16 @@ label{
 
 .PDA {
     position: relative;
-    top: 98px;
-    left: 650px;
+    width: 100%;
+    top: 100px;
+    left: 644px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.PDA-link {
+    color: rgba(43, 53, 65, 1);
     font-weight: 400;
     font-size: 11px;
     line-height: 1.5;
@@ -562,12 +590,12 @@ label{
 .about-title {
     position: relative;
     left: 0px;
-    top: -381px;
+    top: -717px;
 }
 
 .about-description {
     position: relative;
-    top: -400px;
+    top: -737px;
     left: 0px;
     font-weight: 400;
     font-size: 18px;
@@ -576,13 +604,24 @@ label{
 
 .trainer-photo {
     position: relative;
-    right: -560px;
+    z-index: 1;
     top: 0px;
+    right: -560px;
+}
+
+.gradient-trainer {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
+    position: relative;
+    z-index: 2;
+    width: 580px;
+    height: 336px;
+    top: -342px;
+    right: -560px;
 }
 
 .enlist-button {
     position: relative;
-    top: -399px;
+    top: -736px;
     left: -91px;
     font-weight: 700;
     font-size: 16px;
@@ -593,9 +632,10 @@ label{
 }
 
 .advantages {
-    margin-top: -277px;
+    margin-top: -613px;
+    margin-bottom: 0;
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
 }
 
 .advantages-item {
@@ -660,7 +700,7 @@ footer {
 
 .footer-logo {
     position: relative;
-    left: -5px;
+    left: 369px;
 }
 
 .footer-nav {
@@ -710,7 +750,7 @@ footer {
 .nav-email {
     position: relative;
     top: 2px;
-    left: 6px;
+    left: -368px;
 }
 
 .nav-link-email {
@@ -722,12 +762,12 @@ footer {
 
 .nav-social-01 {
     position: relative;
-    left: 41px;
+    left: -333px;
     top: -7px;
 }
 
 .nav-social-02 {
     position: relative;
-    left: 33px;
+    left: -341px;
     top: -7px;
 }
