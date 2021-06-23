@@ -691,6 +691,9 @@ label{
 
 footer {
     background-color: #F3F3F3;
+}
+
+.footer-top {
     display: flex;
     justify-content: space-between;
     margin-top: 166px;
