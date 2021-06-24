@@ -237,6 +237,24 @@ header {
     color:#FBF138;
 }
 
+.btn-take_part {
+    text-decoration: none;
+    color: #FBF138;
+    background-color: #2B3541;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: relative;
+    top: 24px;
+    left: -99px;
+    padding: 23px 40px;
+
+    display: none;
+}
+
 .event-item-group {
     display: flex;
     justify-content: space-between;
@@ -248,8 +266,19 @@ header {
     margin-right: 21px;
 }
 
-.event-item:hover {
+.yellow-static-gradient:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
+    position: relative;
+    width: 100%;
+    top: -623px;
+}
 
+.yellow-static-gradient:hover>.event-type {
+    display: none;
+}
+
+.yellow-static-gradient:hover>.btn-take_part {
+    display: block;
 }
 
 .event-date {
@@ -275,18 +304,41 @@ header {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    position: relative;
-    top: 381px;
-    left: 245px;
     padding: 10px 20px;
     background-color: #FBF138;
+}
+
+.event-type-01 {
+    position: relative;
+    top: 381px;
+    left: 244px;
+}
+
+.event-type-02 {
+    position: relative;
+    top: 383px;
+    left: 245px;
+}
+
+.event-type-03 {
+    position: relative;
+    top: 384px;
+    left: 246px;
 }
 
 .yellow-static-gradient {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
     position: relative;
     width: 100%;
+    height: 600px;
     top: -623px;
+
+    transition: 0.2s ease all;
+}
+
+.schedule {
+    position: relative;
+    top: -364px;
 }
 
 .schedule-title {
@@ -301,7 +353,7 @@ header {
     line-height: 1.25;
     font-weight: 700;
     position: relative;
-    top: -315px;
+    top: -342px;
     left: 965px;
 }
 
@@ -337,13 +389,19 @@ header {
     border: 1px solid #2B3541;
     width: 365px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.training-date-time,
+.training-date-time {
+    position: absolute;
+}
+
 .training-icon, 
 .training-name, 
 .training-description {
-    position: absolute;
+    position: relative;
 }
 
 .training-date-time {
@@ -362,16 +420,18 @@ header {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+
+    display: none;
 }
 
 .training-date-time-01 {
     top: 2px;
-    right: 30px;
+    right: 29px;
 }
 
 .training-icon-01 {
-    bottom: 76px;
-    left: 29px;
+    bottom: 19px;
+    left: 30px;
 }
 
 .training-name-01 {
@@ -380,17 +440,21 @@ header {
 }
 
 .training-description-01 {
-    display: none;
+    bottom: 0px;
+    left: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .training-date-time-02 {
     top: 0px;
-    right: 32px;
+    right: 31px;
 }
 
 .training-icon-02 {
-    bottom: 77px;
-    left: 28px;
+    bottom: 19px;
+    left: 29px;
 }
 
 .training-name-02 {
@@ -399,41 +463,49 @@ header {
 }
 
 .training-description-02 {
-    display: none;
+    bottom: 0px;
+    left: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .training-date-time-03 {
     top: 0px;
-    right: 32px;
+    right: 31px;
 }
 
 .training-icon-03 {
-    bottom: 77px;
-    left: 27px;
+    bottom: 19px;
+    left: 28px;
 }
 
 .training-name-03 {
     bottom: 1px;
-    left: 35px;
+    left: 36px;
 }
 
 .training-description-03 {
-    display: none;
+    bottom: 0px;
+    left: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .training-date-time-04 {
     top: 2px;
-    right: 30px;
+    right: 29px;
 }
 
 .training-icon-04 {
-    bottom: 178px;
-    left: 28px;
+    bottom: 120px;
+    left: 29px;
 }
 
 .training-name-04 {
     bottom: 102px;
-    left: 28px;
+    left: 30px;
 }
 
 .training-description-04 {
@@ -446,21 +518,25 @@ header {
 
 .training-date-time-05 {
     top: 0px;
-    right: 31px;
+    right: 30px;
 }
 
 .training-icon-05 {
-    bottom: 77px;
-    left: 28px;
+    bottom: 19px;
+    left: 29px;
 }
 
 .training-name-05 {
     bottom: 1px;
-    left: 28px;
+    left: 29px;
 }
 
 .training-description-05 {
-    display: none;
+    bottom: 0px;
+    left: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .training-date-time-06 {
@@ -469,22 +545,30 @@ header {
 }
 
 .training-icon-06 {
-    bottom: 77px;
-    left: 28px;
+    bottom: 19px;
+    left: 29px;
 }
 
 .training-name-06 {
     bottom: 1px;
-    left: 28px;
+    left: 29px;
 }
 
 .training-description-06 {
-    display: none;
+    bottom: 0px;
+    left: 29px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .training-item-active {
     border: 1px solid transparent;
     background: linear-gradient(#FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+}
+
+.training-item:hover>.training-description {
+    display: block;
 }
 
 .section-mailing {
@@ -495,6 +579,8 @@ header {
     max-width: 1920px;
     margin: 0 auto;
     margin-top: 160px;
+    position: relative;
+    top: -364px;
     background-color: #F3F3F3;
     height: 348px;
 }
@@ -582,6 +668,8 @@ label{
 }
 
 .about {
+    position: relative;
+    top: -364px;
     margin-top: 160px;
     margin-left: 8px;
     margin-bottom: 0;
@@ -632,6 +720,8 @@ label{
 }
 
 .advantages {
+    position: relative;
+    top: -364px;
     margin-top: -613px;
     margin-bottom: 0;
     display: flex;
@@ -690,6 +780,8 @@ label{
 }
 
 footer {
+    position: relative;
+    top: -364px;
     background-color: #F3F3F3;
 }
 
@@ -773,4 +865,31 @@ footer {
     position: relative;
     left: -341px;
     top: -7px;
+}
+
+.copyright-1 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(43, 53, 65, 0.3);
+    position: relative;
+    top: -61px;
+    left: 386px;
+}
+
+.copyright-2 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(43, 53, 65, 0.3);
+    position: relative;
+    top: -97px;
+    right: -1088px;
+}
+
+.copyright-link {
+    color: rgba(43, 53, 65, 0.3);
+    transition: ease 0.2s color;
+}
+
+.copyright-link:hover {
+    color: rgba(43, 53, 65, 1);
 }
