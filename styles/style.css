@@ -249,10 +249,10 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     position: relative;
-    top: 24px;
-    left: -99px;
-    padding: 23px 40px;
-
+    top: 34px;
+    left: 31px;
+    padding: 20px 4px;
+    width: 213px;
     display: none;
 }
 
@@ -269,11 +269,19 @@ header {
     margin-right: 21px;
 }
 
-.yellow-static-gradient:hover {
+.yellow-static-gradient {
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
     position: relative;
     width: 100%;
+    height: 600px;
     top: -623px;
+
+    transition: 0.2s ease all;
+}
+
+.yellow-static-gradient:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 1) 0%, rgba(253, 249, 182, 0) 100%);
+    position: relative;
 }
 
 .yellow-static-gradient:hover>.event-type {
@@ -329,16 +337,6 @@ header {
     left: 246px;
 }
 
-.yellow-static-gradient {
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
-    position: relative;
-    width: 100%;
-    height: 600px;
-    top: -623px;
-
-    transition: 0.2s ease all;
-}
-
 .schedule {
     margin-bottom: 100px;
 }
@@ -355,6 +353,8 @@ header {
     line-height: 1.25;
     font-weight: 700;
     position: relative;
+    top: -255px;
+    left: 966px;
 }
 
 .training-item-group {
@@ -593,6 +593,7 @@ header {
 
 .email-input{
     position: relative;
+    border: none;
     outline: none;
     top: 129px;
     left: 60px;
@@ -618,7 +619,7 @@ header {
     position: relative;
     z-index: 2;
     top: 129px;
-    left: 61px;
+    left: 65px;
     margin-left: 15px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -651,12 +652,14 @@ label{
 
 .PDA {
     position: relative;
-    width: 100%;
+    display: inline-block;
+    width: 300px;
     top: 100px;
     left: 644px;
     font-weight: 400;
     font-size: 11px;
     line-height: 1.5;
+    margin-right: 0;
 }
 
 .PDA-link {
@@ -691,7 +694,7 @@ label{
 .trainer-photo {
     position: relative;
     z-index: 1;
-    top: -228px;
+    top: -227px;
     right: -245px;
 }
 
@@ -863,6 +866,7 @@ footer {
 }
 
 .copyright-1 {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.5;
     color: rgba(43, 53, 65, 0.3);
@@ -872,12 +876,13 @@ footer {
 }
 
 .copyright-2 {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.5;
     color: rgba(43, 53, 65, 0.3);
     position: relative;
-    top: -97px;
-    right: -1088px;
+    top: -61px;
+    right: -873px;
 }
 
 .copyright-link {
