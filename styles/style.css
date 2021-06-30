@@ -1052,10 +1052,318 @@ footer {
         height: 310px;
     }
 
-    .training-item-group{
-        display: grid;
-        grid-template-rows: repeat(6, 1fr);
+    .yellow-static-gradient {
+        height: 309px;
+        top: -333px;
     }
 
+    .schedule-title {
+        top: -14px;
+        left: 11px;
+    }
+
+
+    .training-item-group {
+        margin-top: -72px;
+        margin-left: 8px;
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .training-column-01 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .training-column-02 {
+        margin-top: -95px;
+        display: grid;
+        grid-template-rows: repeat(2, 114px);
+    }
+
+    .training-column-03 {
+        margin-top: -288px;
+        display: grid;
+        grid-template-rows: repeat(2, 114px);
+    }
+
+    .training-item {
+        height: 114px;
+        width: 340px;
+        transition: ease 0.2s height;
+    }
+
+    .training-item-active,
+    .training-item:hover {
+        height: 206px;
+    }
+
+    .event-date {       
+        font-size: 12px;
+        line-height: 100%;
+    }
+
+    .event-title {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .week-title {
+        font-size: 16px;
+        line-height: 120%;
+        top: -110px;
+        left: 245px;
+    }
+
+    .training-date-time {
+        font-size: 16px;
+        line-height: 150%;
+        opacity: 0.7;
+    }
+
+    .training-date-time-01 {
+        top: 4px;
+        right: 19px;
+    }
+
+    .training-date-time-02 {
+        top: 4px;
+        right: 19px;
+    }
+
+    .training-date-time-03 {
+        top: 4px;
+        right: 19px;
+    }
+
+    .training-date-time-04 {
+        top: 4px;
+        right: 19px;
+    }
+
+    .training-date-time-05 {
+        top: 4px;
+        right: 19px;
+    }
+
+    .training-date-time-06 {
+        top: 1px;
+        right: 19px;
+    }
+
+
+    .training-icon-01 {
+        bottom: -36px;
+        left: 22px;
+    }
+
+    .training-icon-04 {
+        bottom: -1px;
+        left: 22px;
+    }
+
+    .training-icon-02 {
+        bottom: -35px;
+        left: 22px;
+    }
+
+    .training-icon-05 {
+        bottom: -35px;
+        left: 22px;
+    }
+
+    .training-icon-03 {
+        bottom: -34px;
+        left: 23px;
+    }
+
+    .training-icon-06 {
+        bottom: -31px;
+        left: 23px;
+    }
+
+    .training-icon-01 svg {
+        width: 39px;
+        height: 39px;
+    }
+
+    .training-icon-04 svg {
+        width: 34px;
+        height: 53px;
+    }
+
+    .training-icon-02 svg {
+        width: 23px;
+        height: 45px;
+    }
+
+    .training-icon-05 svg {
+        width: 39px;
+        height: 37px;
+    }
+
+    .training-icon-03 svg {
+        width: 46px;
+        height: 25px;
+    }
+
+    .training-icon-06 svg {
+        width: 35px;
+        height: 40px;
+    }
+
+    .training-name {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .training-item-04 {
+        top: -93px;
+    }
+
+    .training-name-01 {
+        bottom: 12px;
+        left: 78px;
+    }
+
+    .training-name-02 {
+        bottom: 18px;
+        left: 78px;
+    }
+
+    .training-name-05 {
+        bottom: 15px;
+        left: 79px;
+    }
+
+    .training-name-03 {
+        bottom: 9px;
+        left: 79px;
+    }
+
+    .training-name-06 {
+        bottom: 16px;
+        left: 79px;
+    }
+
+    .mailing {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: -500px;
+        position: relative;
+        background-color: #F3F3F3;
+        height: 414px;
+        margin-bottom: 170px;
+    }
+
+    .mailing-title {
+        top: 31px;
+        left: 72px;
+    }
+
+    .email-input {
+        top: 56px;
+        left: 8px;
+    }
+
+    .subscribe {
+        top: 117px;
+        left: -11px;
+        padding: 20px 110px 20px 87px;
+    }
+
+    .PDA {
+        top: -27px;
+        left: -7px;
+    }
+
+    .about {
+        margin-top: -88px;
+    }
+
+    .about-title {
+        position: relative;
+        left: 3px;
+        top: 0px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        line-height: 1.5;
+        top: -9px;
+        left: 2px;
+    }
+
+    .advantages {
+        margin-top: -200px;
+        flex-direction: column;
+    }
+
+    .advantages-item {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .advantage-name,
+    .advantage-description {
+        font-size: 16px;
+        line-height: 1.2;
+        left: 11px;
+    }
+
+    .advantage-description {
+        opacity: 0.6;
+    }
+
+    .advantage-name-01 {
+        top: -20px;
+    }
+
+    .advantage-description-01 {
+        top: -16px;
+    }
+
+    .advantage-name-02 {
+        top: -3px;
+    }
+
+    .advantage-description-02 {
+        top: 0px;
+    }
+
+    .advantage-name-03 {
+        top: -5px;
+    }
+
+    .advantage-description-03 {
+        top: -2px;
+    }
+
+    .advantage-name-04 {
+        top: 12px;
+    }
+
+    .advantage-description-04 {
+        top: 16px;
+    }
+
+    .enlist-button {
+        top: 442px;
+        left: -107px;
+        padding: 20px 117px 20px 119px;
+    }
+
+    .trainer-photo {
+        height: 207px;
+        width: 360px;
+        top: 481px;
+        right: 8px;
+    }
+
+    footer {
+        margin-top: 479px;
+    }
 
 }
