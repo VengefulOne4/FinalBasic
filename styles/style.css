@@ -587,6 +587,18 @@ header {
     margin-bottom: 170px;
 }
 
+.circle-mailing {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 63px;
+    left: 625px;
+}
+
+.circle-mailing circle {
+    fill: #FBF138;
+}
+
 .mailing-title {
     display: inline-block;
     position: relative;
@@ -789,6 +801,7 @@ footer {
 .footer-top {
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin-top: 166px;
     padding-top: 44px;
     padding-bottom: 65px;
@@ -818,12 +831,19 @@ footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.footer-nav-link:hover {
+    cursor: pointer;
+}
+
+.main-footer-nav-link {
     padding-bottom: 10px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s ease;
 }
 
-.footer-nav-link:hover {
+.main-footer-nav-link:hover {
     border-bottom: 1px solid #2B3541;
     cursor: pointer;
 }
@@ -841,6 +861,18 @@ footer {
 .footer-nav-item-03 {
     position: relative;
     left: 115px;
+}
+
+.circle-nav-email {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 35px;
+    left: 1214px;
+}
+
+.circle-nav-email circle {
+    fill: #FBF138;
 }
 
 .nav-email {
@@ -976,10 +1008,18 @@ footer {
     .about-description-mobile {
         display: none;
     }
+
+    .btn-take_part-mobile {
+        display: none;
+    }
 }
 
 @media(max-width: 600px) {
     header {
+        display: none;
+    }
+
+    .btn-take_part {
         display: none;
     }
 
@@ -1099,13 +1139,14 @@ footer {
     }
 
     .yellow-static-gradient {
-        height: 309px;
-        top: -333px;
+        height: 271px;
+        top: -307px;
     }
 
     .yellow-static-gradient-03 {
         height: 336px;
         width: 340px;
+        top: -353px;
     }
 
     .event-title {
@@ -1120,6 +1161,67 @@ footer {
         line-height: 100%;
         top: 26px;
         left: 20px;
+    }
+
+    .event-type {
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 6px 16px;
+    }
+
+    .event-type-01 {
+        top: 146px;
+        left: 0px;
+    }
+
+    .event-type-02 {
+        top: 146px;
+        left: 0px;
+    }
+
+    .event-type-03 {
+        top: 212px;
+        left: 0px;
+    }
+
+    .yellow-static-gradient:hover>.btn-take_part {
+        display: none;
+    }
+
+    .btn-take_part-mobile {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(/img/add.png);
+        background-repeat: no-repeat;
+    }
+
+    .btn-take_part-01 {
+        position: absolute;
+        top: 239px;
+        left: 134px;
+    }
+
+    .btn-take_part-02 {
+        position: absolute;
+        top: 239px;
+        left: 134px;
+    }
+
+    .btn-take_part-03 {
+        position: absolute;
+        top: 307px;
+        left: 307px;
+    }
+
+    .yellow-static-gradient:hover>.btn-take_part-01 {
+        position: relative;
+        top: 86px;
+        left: 23px;
+    }
+
+    .schedule {
+        margin-top: 46px;
     }
 
     .schedule-title {
@@ -1346,6 +1448,17 @@ footer {
         margin-bottom: 170px;
     }
 
+    .mobile-ml {
+        margin-left: 10px;
+    }
+
+    .circle-mailing {
+        width: 31px;
+        height: 31px;
+        top: 43px;
+        left: 57px;
+    }
+
     .mailing-title {
         top: 30px;
         left: 72px;
@@ -1459,6 +1572,8 @@ footer {
 
     footer {
         margin-top: 380px;
+        background-color: #FFFFFF;
+        margin-bottom: 30px;
     }
 
     .footer-logo {
@@ -1488,6 +1603,13 @@ footer {
         width: 77px;
     }
 
+    .circle-nav-email {
+        width: 20px;
+        height: 20px;
+        top: 82px;
+        left: 19px;
+    }
+
     .nav-email {
         position: relative;
         top: 45px;
@@ -1504,6 +1626,31 @@ footer {
         position: relative;
         left: -357px;
         top: 44px;
+    }
+
+    .footer-nav-IN,
+    .footer-nav-FB {
+        text-decoration: none;
+    }
+
+    .footer-nav-IN svg {
+        transform: scale(1);
+        transition: transform 0.2s ease;
+    }
+    
+    .footer-nav-IN svg:hover {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+
+    .footer-nav-FB svg {
+        transform: scale(1);
+        transition: transform 0.2s ease;
+    }
+    
+    .footer-nav-FB svg:hover {
+        opacity: 1;
+        transform: scale(1.3);
     }
 
     .footer-bottom {
